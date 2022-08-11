@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+h1, h2, h3, body {
+font-family: 'Chivo', sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: 1.5;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 120px;
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 72px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 48px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 24px;
+}
