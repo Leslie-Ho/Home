@@ -97,11 +97,16 @@ function setTime() {
     if (hours > 12) {
         hours -= 12;
         timeOfDay = " PM"
-    }  
+    }
+    
+    if (minute < 10){
+        minute = "0" + minute;
+    }
+    
     document.getElementById('date').innerHTML = date;
     document.getElementById('time').innerHTML = hours + ":" + minute + timeOfDay;
 
-    console.log("time");
+    console.log(minute);
 }
 
 window.onload = setTime();
