@@ -1,8 +1,5 @@
 const d = new Date();
-let date = d.toDateString();
-let hours = d.getHours();
 let minutes = d.getMinutes();
-//0 to 59
 
 let weatherAppID = "f8bb3293d3e0c78998d7b539f896df63";
 let searchMethod = 'zip';
@@ -91,17 +88,24 @@ function convertUnix(unix) {
 }
 
 function setTime() {
-    var timeOfDay = " AM"
+    let now = new Date();
+    let date = now.toDateString();
+    let hours = now.getHours();
+    let minute = now.getMinutes();
+    let timeOfDay = " AM"
+
     if (hours > 12) {
         hours -= 12;
         timeOfDay = " PM"
     }  
-
     document.getElementById('date').innerHTML = date;
-    document.getElementById('time').innerHTML = hours + ":" + minutes + timeOfDay;
+    document.getElementById('time').innerHTML = hours + ":" + minute + timeOfDay;
+
+    console.log("time");
 }
 
+window.onload = setTime();
 searchWeather(currentZip);
 timeBackground();
-setTime();
+setInterval(setTime, 1000);
 
