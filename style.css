@@ -1,3 +1,134 @@
 @import url(type.css);
 @import url(colors.css);
 
+.backgroundImage {
+    
+}
+
+.cardCollection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 504px;
+    height: 543px;
+    left: 180px;
+    top: 340px;
+}
+
+.cardAttr {
+    background-color: var(--backgroundGreen);
+    box-shadow: -4px 4px 8px var(--shadowColor);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+
+    width: 440px;
+
+    padding: 32px;
+    gap: 0px;
+}
+
+.shortcutsCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+    padding: 0px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.shortcutsItem {
+    width: 32px;
+    height: 32px;
+    margin: 0px 16px;
+    
+    flex: none;
+}
+
+.gifIconItem {
+    width: 40px;
+    height: 40px;
+    flex: none;
+
+    background-position: center;
+}
+
+.textItem {
+    margin: 0px;
+}
+
+.weatherCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+}
+
+.weatherTempAlign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    width: 114px;
+    height: 110px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.weatherAttrAlign {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0px;
+    gap: 8px;
+    width: 179px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.dateTimeCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+    gap: 0px;
+    padding: 0px;
+
+    width: 440px;
+}
+
+.dateIconAlign {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0px;
+    gap: 8px;
+
+    width: 440px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
