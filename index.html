@@ -7,28 +7,30 @@
     <title>Home Screen</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-image: url(./backgroundImages/homeImage1.jpeg);">
+<body>
     <ul class="cardCollection">
         <li class="cardAttr">
             <ul class="dateTimeCard">
                 <li><ul class="dateIconAlign">
-                    <li><h3 class="textItem">Date</h3></li>
+                    <li><h3 id = "date" class="textItem"></h3></li>
                     <li class="gifIconItem" style="background-image: url(./icons/icon_time.gif); background-size: cover;"></li>
                 </ul></li>
-                <li><h1 class="textItem">TIME</h1></li>
+                <li><h1 id = "time" class="textItem"></h1></li>
             </ul>
         </li>
         <li class="cardAttr">
             <ul class="weatherCard">
                 <li class="gifIconItem" style="background-image: url(./icons/icon_temp.gif); background-size: cover;"></li>
                 <li><ul class="weatherTempAlign">
-                    <li><h2 class="textItem">85</h2></li>
-                    <li><h3 class="textItem">86 / 86</h3></li>
+                    <li><h2 id = "temp" class="textItem"></h2></li>
+                    <li><h3 id = "hiLo" class="textItem"></h3></li>
                 </ul></li>
-                <li><ul class="weatherAttrAlign">
-                    <li><h4 class="textItem">humidity: 58%</h4></li>
-                    <li><h4 class="textItem">uv: 9 of 10</h4></li>
-                    <li><h4 class="textItem">moon: full</h4></li>
+                <li><ul class = "weatherAttrAlign">
+                    <li><h4 id = "humid" class="textItem"></h4></li>
+                    <!-- <li><h4 id = "uv" class="textItem"></h4></li> -->
+                    <li><h4 id = "wind" class="textItem"></h4></li>
+                    <li><h4 id = "sunset" class="textItem"></h4></li>
+                    <!-- <li><h4 id = "moon" class="textItem"></h4></li> -->
                 </ul></li>
             </ul>
         </li>
@@ -42,5 +44,6 @@
             </ul>
         </li>
     </ul>
+    <script src="script.js"></script>
 </body>
 </html>
