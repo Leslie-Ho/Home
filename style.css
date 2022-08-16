@@ -1,6 +1,12 @@
 @import url(type.css);
 @import url(colors.css);
 
+body {
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
 .cardCollection {
     display: flex;
     flex-direction: column;
